@@ -4,8 +4,9 @@ from twitter.fetch import fetch_tweets
 from db.mongo import save_search, get_user_searches
 from analysis.sentiment import analyze_sentiment
 from utils.helpers import sentiment_summary
+from icon.icon import icon_base64
 
-st.set_page_config(page_title="Twitter Feed Analyzer", layout="centered")
+st.set_page_config(page_title="Twitter Feed Analyzer", page_icon=icon_base64, layout="centered")
 
 # Session
 if "logged_in" not in st.session_state:

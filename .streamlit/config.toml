@@ -1,0 +1,6 @@
+[theme]
+primaryColor = "#3A86FF"  # Vivid blue for primary buttons, highlights
+backgroundColor = "#F0F4F8"  # Soft light-grayish blue background
+secondaryBackgroundColor = "#D9E6F2"  # Slightly darker blue-gray for sidebar
+textColor = "#1F2937"  # Dark grayish-blue for good readability
+font = "Poppins"  # Modern, clean font

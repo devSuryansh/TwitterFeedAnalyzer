@@ -35,7 +35,7 @@
 ## 🧱 Project Structure
 
 ```bash
-devsuryansh-twitterfeedanalyzer/
+devSuryansh/TwitterfeedAnalyzer/
 ├── README.md                # Project documentation
 ├── app.py                  # Main Streamlit application
 ├── requirements.txt        # Required Python packages

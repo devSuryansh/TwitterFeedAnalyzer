@@ -36,26 +36,35 @@
 
 ```bash
 devSuryansh/TwitterFeedAnalyzer/
-├── README.md                # Project documentation
-├── app.py                  # Main Streamlit application
-├── requirements.txt        # Required Python packages
-├── analysis/
-│   └── sentiment.py        # Sentiment analysis logic using TextBlob
-├── auth/
-│   └── auth_manager.py     # User login/signup handlers
-├── config/
-│   └── config.py           # API keys and MongoDB config (via dotenv)
-├── db/
-│   └── mongo.py            # MongoDB database logic
-├── docs/                   # Documentation assets
-├── icon/
-│   └── icon.py             # Custom icon loader for Streamlit tab
-├── twitter/
-│   └── fetch.py            # Twitter API v2 integration
-├── utils/
-│   └── helpers.py          # Common utility functions
-└── .streamlit/
-    └── config.toml         # Custom Streamlit theming
+├── analysis                 # Folder for data analysis logic
+│   └── sentiment.py        # Sentiment analysis using TextBlob
+├── app.py                  # Main entry point - Streamlit app UI
+├── auth                    # Folder handling user authentication
+│   └── auth_manager.py     # Logic for login/signup with bcrypt and MongoDB
+├── config                  # Configuration files
+│   └── config.py           # Loads environment variables like Mongo URI and Twitter token
+├── db                      # Database interaction layer
+│   └── mongo.py            # MongoDB connection and operations
+├── docs                    # Documentation and design diagrams
+│   ├── er_diagram.png      # Entity-Relationship diagram
+│   ├── flowchart.png       # Application flowchart
+│   ├── Presentation.pptx   # PowerPoint presentation about the project
+│   └── ProjectReport.pdf   # Detailed project report
+├── icon                    # Application icon resources
+│   ├── icon.py             # Python script to load/encode the icon
+│   └── twitter.svg         # Twitter SVG icon for branding
+├── README.md               # Project documentation and usage guide
+├── requirements.txt        # List of all Python dependencies
+├── screenshots             # Folder containing app UI screenshots
+│   ├── history.png         # Screenshot of user search history page
+│   ├── login.png           # Screenshot of login/signup UI
+│   ├── mobile_view.png     # Screenshot of the app on mobile device
+│   ├── search.png          # Screenshot of keyword-based tweet search
+│   └── summary.png         # Screenshot of sentiment analysis summary
+├── twitter                 # Twitter API integration
+│   └── fetch.py            # Code to fetch tweets using Twitter API v2
+└── utils                   # Utility/helper functions
+    └── helpers.py          # Common utilities like sentiment summarization
 ```
 
 ## 🛠️ Setup Instructions
